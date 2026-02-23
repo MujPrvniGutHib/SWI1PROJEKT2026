@@ -1,1 +1,14 @@
-app.name=SWICKO1Backend
+spring:
+  application:
+    admin: SWI26
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+server:
+  port: 8080
+app:
+  name: Dingus

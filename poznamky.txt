@@ -1,0 +1,5 @@
+docker run --name SWIpostgres -p 5432:5432 -e POSTGRES_PASSWORD=root -d postgres
+
+jdbc:postgresql://localhost:5432/postgres
+
+intellij ultimate v pravém baru je databáze, připojit postgres, url only
