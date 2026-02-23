@@ -1,4 +1,11 @@
 package cz.osu.swicko1backend.model.entity;
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 
 public class AppUser {
     private Long id;

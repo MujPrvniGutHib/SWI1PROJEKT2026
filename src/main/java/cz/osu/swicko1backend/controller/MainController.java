@@ -14,5 +14,5 @@ public class MainController {
     public String getAppName() {
         return appName;
     }
-
+//DODĚLAT!!!
 }
