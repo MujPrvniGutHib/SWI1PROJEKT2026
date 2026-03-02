@@ -1,23 +1,24 @@
 package cz.osu.swicko1backend.model.entity;
+
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.UUID;
+
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private Integer id;
+    private UUID userId;
     @Column(nullable = false)
     private String username;
     @Column(nullable = false)
     private String password;
     @Column(nullable = false)
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private Role role;
-
-
 }

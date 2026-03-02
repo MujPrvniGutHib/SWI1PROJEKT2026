@@ -2,10 +2,12 @@ package cz.osu.swicko1backend.model.repository;
 
 import cz.osu.swicko1backend.model.entity.AppUser;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+@Repository
 public interface AppUserRepository extends CrudRepository<AppUser, UUID> {
-//    prostředník pro SQL příkazy
-
+    boolean existsByUsernameIgnoreCase(String username);
+    
 }
