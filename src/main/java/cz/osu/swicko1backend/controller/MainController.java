@@ -1,8 +1,8 @@
 package cz.osu.swicko1backend.controller;
 
-import import cz.osu.swicko1backend.model.entity.AppUser;
-import import cz.osu.swicko1backend.model.entity.Role;
-import import cz.osu.swicko1backend.model.repository.AppUserRepository;
+import cz.osu.swicko1backend.model.entity.AppUser;
+import cz.osu.swicko1backend.model.entity.Role;
+import cz.osu.swicko1backend.model.repository.AppUserRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
