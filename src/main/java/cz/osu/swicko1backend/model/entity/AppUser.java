@@ -3,6 +3,7 @@ package cz.osu.swicko1backend.model.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Getter
@@ -21,4 +22,6 @@ public class AppUser {
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Role role;
+    private LocalDate dateOfBirth;
+
 }
