@@ -7,7 +7,17 @@ import {useState} from "react";
 
 function App() {
 
-const[user, setUser] = useState(getUserToken());
+const [user, setUser] = useState(getUserToken())
+    function getUserToken() {
+    let userToken = JSON.parse(localStorage.getItem('userToken')||'""')
+
+        return userToken;
+    }
+
+    function setUserToken(userToken:any){
+    localStorage.setItem('userToken',JSON.stringify(userToken));
+    }
+
 
   return (
     <div className="App">
